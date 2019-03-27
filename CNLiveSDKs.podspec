@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CNLiveSDKs'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'CNLiveSDKs集合'
 
 # This description is used to generate tags and improve search results.
@@ -38,6 +38,10 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
 
   s.subspec 'CNLiveUserSystemSDK' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
+  end
+
+  s.subspec 'CNLiveEncryptSDK' do |sp|
+    sp.vendored_frameworks = 'CNLiveSDKs/CNLiveEncryptSDK.framework'
   end
 
   # s.resource_bundles = {
