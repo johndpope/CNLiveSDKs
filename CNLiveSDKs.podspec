@@ -32,17 +32,17 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
 
   # s.source_files = 'CNLiveSDKs/Classes/**/*'
 
-  # s.subspec 'CNLiveStat' do |sp|
-  #   sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
-  # end
-  #
-  # s.subspec 'CNLiveUserSystemSDK' do |sp|
-  #   sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
-  # end
-  #
-  # s.subspec 'CNLiveEncryptSDK' do |sp|
-  #   sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
-  # end
+  s.subspec 'CNLiveStat' do |sp|
+    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
+  end
+
+  s.subspec 'CNLiveUserSystemSDK' do |sp|
+    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
+  end
+
+  s.subspec 'CNLiveEncryptSDK' do |sp|
+    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
+  end
 
   s.subspec 'CNLivePlayerSDK' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLivePlayerSDK/CNLivePlayerSDK.framework'
