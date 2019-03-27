@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CNLiveSDKs'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'CNLiveSDKs集合'
 
 # This description is used to generate tags and improve search results.
@@ -32,17 +32,17 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
 
   # s.source_files = 'CNLiveSDKs/Classes/**/*'
 
-  s.subspec 'CNLiveStat' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
-  end
-
-  s.subspec 'CNLiveUserSystemSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
-  end
-
-  s.subspec 'CNLiveEncryptSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
-  end
+  # s.subspec 'CNLiveStat' do |sp|
+  #   sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
+  # end
+  #
+  # s.subspec 'CNLiveUserSystemSDK' do |sp|
+  #   sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
+  # end
+  #
+  # s.subspec 'CNLiveEncryptSDK' do |sp|
+  #   sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
+  # end
 
   s.subspec 'CNLiveMsgTools' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveMsgTools.framework'
@@ -56,6 +56,7 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
     sp.dependency 'libksygpulive_ks3', '~> 3.0.4'
     sp.dependency 'Ks3SDK', '~> 2.1.2'
     sp.dependency 'CNLiveSDKs/CNLiveMsgTools'
+
   end
 
   # s.resource_bundles = {
