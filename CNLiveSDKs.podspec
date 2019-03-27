@@ -35,6 +35,11 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
   s.subspec 'CNLiveStat' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
   end
+
+  s.subspec 'CNLiveUserSystemSDK' do |sp|
+    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
+  end
+
   # s.resource_bundles = {
   #   'CNLiveSDKs' => ['CNLiveSDKs/Assets/*.png']
   # }
