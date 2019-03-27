@@ -41,7 +41,7 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
   end
 
   s.subspec 'CNLiveEncryptSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/CNLiveEncryptSDK.framework'
+    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
   end
 
   # s.resource_bundles = {
