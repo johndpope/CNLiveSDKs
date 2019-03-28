@@ -30,7 +30,6 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
 
   s.ios.deployment_target = '9.0'
 
-  # s.source_files = 'CNLiveSDKs/Classes/**/*'
 
   s.subspec 'CNLiveStat' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
@@ -51,7 +50,7 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
   s.subspec 'CNLivePlayerSDK' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLivePlayerSDK.framework'
     sp.resource_bundles = {
-        'CNLivePlayerSDKBundle' => 'CNLiveSDKs/Classes/CNLivePlayerBundles.bundle' #['CNLiveSDKs/Classes/CNLivePlayerBundle.bundle','CNLiveSDKs/Classes/KSYGPUResource.bundle']
+        'CNLivePlayerSDKBundle' => ['CNLiveSDKs/Classes/CNLivePlayerSDKBundles.bundle'] #['CNLiveSDKs/Classes/CNLivePlayerBundle.bundle','CNLiveSDKs/Classes/KSYGPUResource.bundle']
     }
     sp.dependency 'libksygpulive_ks3', '~> 3.0.4'
     sp.dependency 'Ks3SDK', '~> 2.1.2'
