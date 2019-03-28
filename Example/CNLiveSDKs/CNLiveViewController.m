@@ -18,6 +18,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"CNLivePlayerBundles" ofType:@"bundle"];//KSYGPUResource  CNLivePlayerBundle
+    NSBundle *imageBundle = [NSBundle bundleWithPath:path];
+    NSString *path1 = [imageBundle pathForResource:@"CNLivePlayerBundle" ofType:@"bundle"];
+    NSBundle *imageBundle1 = [NSBundle bundleWithPath:path1];
+    NSURL *modelURL = [imageBundle1 URLForResource:@"VODModel" withExtension:@"mom"];
+    NSLog(@"asdasd");
 }
 
 - (void)didReceiveMemoryWarning
