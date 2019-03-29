@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CNLiveSDKs'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'CNLiveSDKs集合'
 
 # This description is used to generate tags and improve search results.
@@ -50,7 +50,7 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
   s.subspec 'CNLivePlayerSDK' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLivePlayerSDK.framework'
     sp.resource_bundles = {
-        'CNLivePlayerSDKBundle' => ['CNLiveSDKs/Classes/CNLivePlayerSDKBundles.bundle'] #['CNLiveSDKs/Classes/CNLivePlayerBundle.bundle','CNLiveSDKs/Classes/KSYGPUResource.bundle']
+        'CNLivePlayerSDKBundles' => ['CNLiveSDKs/Classes/CNLivePlayerSDKBundles.bundle']
     }
     sp.dependency 'libksygpulive_ks3', '~> 3.0.4'
     sp.dependency 'Ks3SDK', '~> 2.1.2'
