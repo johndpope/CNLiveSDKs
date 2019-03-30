@@ -21,6 +21,7 @@
 #import "CNLiveBarrageAnimationView.h"
 
 @interface CNLiveWebcastManager : NSObject
+//version  2.2.0
 
 + (CNLiveWebcastManager *)manager;
 
@@ -43,6 +44,16 @@
  *  用户ID
  */
 @property (nonatomic ,copy) NSString *userId;
+
+/**
+ *  ChannelName 网++定制
+ */
+@property (nonatomic ,copy) NSString *channelName;
+
+/**
+ *  tag 网++定制
+ */
+@property (nonatomic ,copy) NSString *tag;
 
 /**
  @abstract      初始化直播云SDK(该方法默认正式环境)
