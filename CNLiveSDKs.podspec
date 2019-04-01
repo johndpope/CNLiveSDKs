@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CNLiveSDKs'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'CNLiveSDKs集合'
 
 # This description is used to generate tags and improve search results.
@@ -27,21 +27,20 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
   s.author           = { 'oldSixMrZhang' => 'zhangxu@cnlive.com' }
   s.source           = { :git => 'https://github.com/oldSixMrZhang/CNLiveSDKs.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '9.0'
 
 
-  s.subspec 'CNLiveStat' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
-  end
+  #s.subspec 'CNLiveStat' do |sp|
+  #  sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveStat.framework'
+  #end
 
-  s.subspec 'CNLiveUserSystemSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
-  end
+  #s.subspec 'CNLiveUserSystemSDK' do |sp|
+  #  sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveUserSystemSDK.framework'
+  #end
 
-  s.subspec 'CNLiveEncryptSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
-  end
+  #s.subspec 'CNLiveEncryptSDK' do |sp|
+  #  sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveEncryptSDK.framework'
+  #end
 
   s.subspec 'CNLiveMsgTools' do |sp|
     sp.vendored_frameworks = 'CNLiveSDKs/Classes/CNLiveMsgTools.framework'
@@ -58,11 +57,5 @@ CNLiveSDKs集合,用于内部或多团队集成时使用
 
   end
 
-  # s.resource_bundles = {
-  #   'CNLiveSDKs' => ['CNLiveSDKs/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
