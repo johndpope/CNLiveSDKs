@@ -56,6 +56,11 @@
 @property (nonatomic ,copy) NSString *tag;
 
 /**
+ *  from 网++定制
+ */
+@property (nonatomic ,copy) NSString *from;
+
+/**
  @abstract      初始化直播云SDK(该方法默认正式环境)
  @param         appId              在open.cnlive.com网站申请得到的appId
  @param         appKey             在open.cnlive.com网站申请得到的appKey
