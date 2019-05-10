@@ -11,7 +11,7 @@
 @interface CNLiveStat : NSObject
 
 /*
- * 获取SDK版本号 1.3.0
+ * 获取SDK版本号 2.0.0
  */
 + (NSString *)getVersion;
 

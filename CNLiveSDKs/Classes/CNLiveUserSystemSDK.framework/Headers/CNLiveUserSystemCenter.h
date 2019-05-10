@@ -332,7 +332,7 @@
 
 
 /**
- *  获取SDK版本号
+ *  获取SDK版本号 v2.0.0
  */
 + (NSString *)getVersion;
 
