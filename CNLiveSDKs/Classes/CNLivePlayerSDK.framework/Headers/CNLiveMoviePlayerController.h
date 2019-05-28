@@ -430,4 +430,38 @@ MP_EXTERN NSString * const MPMoviePlayerLastNetworkStatusUserInfoKey; // NSNumbe
  */
 - (UIImage *)thumbnailImageAtCurrentTime;
 
+
+/**
+ @abstract 设置播放url
+ @param url 视频播放地址，该地址可以是本地地址或者服务器地址.
+ @discussion 使用说明
+ 
+ * 通常用于使用一个对象进行多次播放的场景
+ * 调用reset接口停止播放后使用该接口来设置下一次播放地址
+ * 需要在[prepareToPlay]([KSYMediaPlayback prepareToPlay])方法之前设置
+ * v2.1.0及之后的版本，该url不可设置为nil；之前的版本设置为nil，会播放上一次的播放地址
+ 
+ @warning 该方法由金山云引入，不是原生系统接口
+ @since Available in KSYMoviePlayerController 1.6.2 and later.
+ */
+- (void)setUrl:(NSURL *)url;
+
+/**
+ @abstract 设置播放视频id
+ @param videoId 视频播放视频id，该地址可以是本地地址或者服务器地址.
+ @param authSuccess       初始化成功block
+ @param authFailed        初始化失败block 回调一个errorInfo的字典
+ 
+ @discussion 使用说明
+ 
+ * 通常用于使用一个对象进行多次播放的场景
+ * 调用reset接口停止播放后使用该接口来设置下一次播放地址
+ * 需要在[prepareToPlay]([KSYMediaPlayback prepareToPlay])方法之前设置
+ * v2.1.0及之后的版本，该url不可设置为nil；之前的版本设置为nil，会播放上一次的播放地址
+ 
+ @warning 该方法由金山云引入，不是原生系统接口
+ @since Available in KSYMoviePlayerController 1.6.2 and later.
+ */
+- (void)setVideoId:(NSString *)videoId authSuccess:(void (^)(void))authSuccessBlock authFailed:(void (^)(NSDictionary *errorDic))authFailedBlock;
+
 @end
